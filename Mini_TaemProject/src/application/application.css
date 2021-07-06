@@ -1,0 +1,9 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#lblTime {
+	-fx-font-family: "LABDigital";
+}
+
+Label {
+	-fx-font-family: "RixFont-Regular";
+}
+

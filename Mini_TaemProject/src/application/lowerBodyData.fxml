@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="230.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ExerciseControl">
+   <top>
+      <Pane maxHeight="-Infinity" prefHeight="230.0" prefWidth="556.0" style="-fx-background-color: #2A2B40;" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane layoutX="62.0" layoutY="6.0" prefHeight="218.0" prefWidth="796.0" style="-fx-background-color: #5661DB;">
+               <children>
+                  <CheckBox fx:id="exercise1" mnemonicParsing="false" prefHeight="17.0" prefWidth="124.0" text="레그익스텐션" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="exercise2" mnemonicParsing="false" prefHeight="22.0" prefWidth="141.0" text="레그컬" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="exercise3" mnemonicParsing="false" prefHeight="22.0" prefWidth="139.0" text="스쿼트" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="exercise4" mnemonicParsing="false" prefHeight="26.0" prefWidth="136.0" text="스탠딩레이즈" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </CheckBox>
+                  <Button fx:id="start1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#start1HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                       			<image>
+                                 	<Image url="@../images/start.PNG" />
+                        		</image>
+                        	</ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="start2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#start2HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                       			<image>
+                                 	<Image url="@../images/start.PNG" />
+                        		</image>
+                        	</ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="start3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#start3HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                       			<image>
+                                 	<Image url="@../images/start.PNG" />
+                        		</image>
+                        	</ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="start4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#start4HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                       			<image>
+                                 	<Image url="@../images/start.PNG" />
+                        		</image>
+                        	</ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="end1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#end1HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                        <image>
+                              <Image url="@../images/stop.PNG" />
+                        </image></ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="end2" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#end2HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                        <image>
+                              <Image url="@../images/stop.PNG" />
+                        </image></ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="end3" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#end3HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                        <image>
+                              <Image url="@../images/stop.PNG" />
+                        </image></ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="end4" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#end4HandleBtnOnAction" prefHeight="34.0" prefWidth="46.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <graphic>
+                     		<ImageView fitHeight="34.0" fitWidth="46.0" preserveRatio="true">
+                        <image>
+                              <Image url="@../images/stop.PNG" />
+                        </image></ImageView>
+                     	</graphic>
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Label fx:id="timeValue1" alignment="CENTER" prefHeight="21.0" prefWidth="136.0" text="0.0" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeValue2" alignment="CENTER" prefHeight="21.0" prefWidth="135.0" text="0.0" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeValue3" alignment="CENTER" prefHeight="21.0" prefWidth="152.0" text="0.0" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeValue4" alignment="CENTER" prefHeight="21.0" prefWidth="146.0" text="0.0" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text=" Exercise name" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text="  count" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text="  Set" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text=" Start Time" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text=" End Time" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="133.0" style="-fx-background-color: #333399;" text=" Total Time" textAlignment="CENTER" textFill="#fcfcfc" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="set1" prefHeight="40.0" prefWidth="92.0" promptText="1==1세트" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="set2" prefHeight="40.0" prefWidth="92.0" promptText="1==1세트" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="set3" prefHeight="41.0" prefWidth="92.0" promptText="1==1세트" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="set4" prefHeight="39.0" prefWidth="92.0" promptText="1==1세트" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="count1" prefHeight="43.0" prefWidth="92.0" promptText="1==1개" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="count2" prefHeight="41.0" prefWidth="92.0" promptText="1==1개" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="count3" prefHeight="40.0" prefWidth="92.0" promptText="1==1개" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="count4" prefHeight="42.0" prefWidth="92.0" promptText="1==1개" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="459.0" minWidth="10.0" prefWidth="449.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="757.0" minWidth="10.0" prefWidth="448.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="757.0" minWidth="10.0" prefWidth="448.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="757.0" minWidth="10.0" prefWidth="448.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="757.0" minWidth="10.0" prefWidth="448.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="757.0" minWidth="10.0" prefWidth="448.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
